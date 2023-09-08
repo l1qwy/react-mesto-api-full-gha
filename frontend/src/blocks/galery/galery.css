@@ -1,0 +1,22 @@
+.galery {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 282px));
+    grid-gap: 20px 17px;
+    margin-bottom: 67px;
+    justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  .galery {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 282px));
+    grid-gap: 25px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galery {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 282px));
+    margin-bottom: 48px;
+    padding: 0 19px;
+  }
+}

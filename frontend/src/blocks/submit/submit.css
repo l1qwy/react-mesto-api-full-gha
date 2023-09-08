@@ -1,0 +1,30 @@
+.submit {
+  width: 358px;
+  height: 50px;
+  background-color: black;
+  border-radius: 2px;
+  margin: 16px 0 0;
+  border-style: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Inter", Arial, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+.submit:hover {
+  opacity: 0.8;
+}
+
+.submit:hover:disabled {
+  cursor: auto;
+}
+
+@media (max-width: 768px) {
+  .submit{
+    width: 238px;
+    height: 46px;
+    margin: 45px 0 0;
+    font-size: 14px;
+  }
+}
