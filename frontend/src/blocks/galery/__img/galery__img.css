@@ -1,0 +1,8 @@
+.galery__img {
+  width: 100%;
+  max-height: 282px;
+  min-height: 282px;
+  object-fit: cover;
+  cursor: pointer;
+}
+

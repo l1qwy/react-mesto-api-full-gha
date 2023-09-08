@@ -1,0 +1,14 @@
+.form__field {
+  margin: 0px 0 5px 0;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  padding: 0px 0 8px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.form__field:last-of-type {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,10 @@
+.form__field_register {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.form__field-register:last-of-type {
+  background-color: black;
+  color: white;
+}

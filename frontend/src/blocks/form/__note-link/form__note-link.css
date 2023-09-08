@@ -1,0 +1,18 @@
+.form__note-link {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.form__note_link :active {
+  color: white;
+}
+
+.form__note_link :visited {
+  color: white;
+}

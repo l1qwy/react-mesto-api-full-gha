@@ -1,0 +1,8 @@
+.form__field_error {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: red;
+  display: flex;
+}
