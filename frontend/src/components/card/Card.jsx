@@ -16,7 +16,7 @@ export default function Card({ cards, onCardClick, onDeletePlace }) {
         <h2 className="galery__item-title">{cards.name}</h2>
         <EmotionButton likes={cards.likes} myId={currentUser._id} cardId={cards._id}/>
       </div>
-      {cards.owner === currentUser._id && (
+      {cards.owner._id === currentUser._id && (
         
         <button
           className="galery__delete"

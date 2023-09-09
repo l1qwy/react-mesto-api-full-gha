@@ -6,7 +6,7 @@ const Card = require('../models/card');
 
 module.exports.getCards = (req, res, next) => {
   Card.find({})
-    // .populate(['owner', 'likes'])
+    .populate(['owner', 'likes'])
     .then((cards) => res.status(httpConstants.HTTP_STATUS_OK).send(cards))
     .catch(next);
 };
@@ -17,7 +17,7 @@ module.exports.addCard = (req, res, next) => {
     .then((card) => {
       Card.findById(card._id)
         .orFail()
-        // .populate('owner')
+        .populate('owner')
         .then((data) => res.status(httpConstants.HTTP_STATUS_CREATED).send(data))
         .catch((error) => {
           if (error.name === 'DocumentNotFoundError') {
@@ -82,7 +82,7 @@ module.exports.likeCard = (req, res, next) => {
     { new: true },
   )
     .orFail()
-    // .populate(['owner', 'likes'])
+    .populate(['owner', 'likes'])
     .then((card) => {
       res.status(httpConstants.HTTP_STATUS_OK).send(card);
     })
@@ -106,7 +106,7 @@ module.exports.unlikeCard = (req, res, next) => {
     { new: true },
   )
     .orFail()
-    // .populate(['owner', 'likes'])
+    .populate(['owner', 'likes'])
     .then((card) => {
       res.status(httpConstants.HTTP_STATUS_OK).send(card);
     })

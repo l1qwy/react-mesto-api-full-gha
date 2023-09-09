@@ -1,4 +1,4 @@
-const baseUrl = "http://api.liqwy.nomoredomainsicu.ru";
+const baseUrl = "http://localhost:3000";
 
 function getResponseData(res) {
   return res.ok
@@ -37,7 +37,7 @@ export function getUserData(token) {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      "Authorization" : `Bearer ${token}`
+    "Authorization" : `Bearer ${token}`
     },
   }).then((res) => getResponseData(res));
 }
