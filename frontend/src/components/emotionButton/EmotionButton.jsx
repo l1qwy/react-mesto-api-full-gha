@@ -6,7 +6,7 @@ export default function EmotionButton({ likes, myId, cardId }) {
   const [isCountLike, setIsCountLikes] = useState(likes.length);
 
   useEffect(() => {
-    setIsLike(likes.some((item) => myId === item._id));
+    setIsLike(likes.some((item) => myId === item));
   }, [likes, myId]);
 
   function handleLike() {

@@ -1,4 +1,4 @@
-const baseUrl = "http://api.liqwy.nomoredomainsicu.ru";
+const baseUrl = "http://localhost:3000";
 
 function getResponseData(res) {
   return res.ok
@@ -7,7 +7,7 @@ function getResponseData(res) {
 }
 
 export function registration(password, email) {
-  return fetch(`${baseUrl}/signup`, {
+  return fetch(`${baseUrl}/sign-up`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export function registration(password, email) {
 }
 
 export function autorization(password, email) {
-  return fetch(`${baseUrl}/signin`, {
+  return fetch(`${baseUrl}/sign-in`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -37,7 +37,7 @@ export function getUserData(token) {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-    "Authorization" : `Bearer ${token}`
+      "Authorization" : `Bearer ${token}`
     },
   }).then((res) => getResponseData(res));
 }
