@@ -1,4 +1,4 @@
-const baseUrl = "https://api.liqwy.nomoredomainsicu.ru";
+const baseUrl = "http://localhost:3000";
 
 function getResponseData(res) {
   return res.ok

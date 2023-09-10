@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 84.201.141.51
+IP 84.201.141.51
 
 Frontend https://liqwy.nomoredomainsicu.ru
 
