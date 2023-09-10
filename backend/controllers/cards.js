@@ -58,8 +58,6 @@ module.exports.deleteCard = (req, res, next) => {
             next(
               new NotFoundError('Карточка с указанным индификатором не найдена'),
             );
-          } else if (error.name === 'CastError') {
-            next(new BadRequestError('Некорректный индификатор'));
           } else {
             next(error);
           }
@@ -70,6 +68,8 @@ module.exports.deleteCard = (req, res, next) => {
         next(
           new NotFoundError('Карточка с указанным индификатором не найдена'),
         );
+      } else if (error.name === 'CastError') {
+        next(new BadRequestError('Некорректный индификатор'));
       } else {
         next(error);
       }

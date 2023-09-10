@@ -28,6 +28,7 @@ const userSchema = new mongoose.Schema(
     },
     likes: [
       {
+        default: '0',
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user',
       },
