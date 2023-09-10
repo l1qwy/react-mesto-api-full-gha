@@ -15,7 +15,7 @@ export default function PageLogin({ name, isValid, onSubmit, children }) {
       {name === "signUp" && (
         <p className="form__note">
           Уже зарегестрированы?{" "}
-          <Link to={"/sign-in"} className="form__note-link">
+          <Link to={"/signin"} className="form__note-link">
             Войти
           </Link>
         </p>

@@ -19,7 +19,7 @@ export default function Header({ name, userData }) {
       />
       {name === "signIn" || name === "signUp" ? (
         <Link
-          to={name === "signUp" ? "/sign-in" : "/sign-up"}
+          to={name === "signUp" ? "/signin" : "/signup"}
           className="header__link"
         >
           {name === "signUp" ? "Войти" : "Регистрация"}
@@ -27,7 +27,7 @@ export default function Header({ name, userData }) {
       ) : (
         <div className="header__userData">
           <p className="header__userEmail">{userData}</p>
-          <Link to={"/sign-in"} className="header__link" onClick={onSignOut}>
+          <Link to={"/signin"} className="header__link" onClick={onSignOut}>
             Выйти
           </Link>
         </div>

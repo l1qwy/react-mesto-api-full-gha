@@ -21,6 +21,6 @@ export default function ProtectedRoute({
   return inLogged ? (
     <Component {...props} />
   ) : (
-    <Navigate to={'/sign-in'} replace />
+    <Navigate to={'/signin'} replace />
   );
 }

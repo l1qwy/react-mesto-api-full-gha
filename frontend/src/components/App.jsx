@@ -169,7 +169,7 @@ function App() {
       .then(() => {
         setIsResultLoginPopupOpen(true);
         setIsSuccessfully(true);
-        navigate("/sign-in");
+        navigate("/signin");
       })
       .catch((error) => {
         setIsResultLoginPopupOpen(true);
@@ -213,7 +213,7 @@ function App() {
             }
           />
           <Route
-            path="/sign-up"
+            path="/signup"
             element={
               <>
                 <Header name="signUp" />
@@ -222,7 +222,7 @@ function App() {
             }
           />
           <Route
-            path="/sign-in"
+            path="/signin"
             element={
               <>
                 <Header name="signIn" />
