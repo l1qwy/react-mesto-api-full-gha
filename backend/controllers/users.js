@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const { SECRET_KEY = 'somekey' } = process.env;
+const { SECRET_KEY = 'some_key' } = process.env;
 const httpConstants = require('http2').constants;
 const bcrypt = require('bcryptjs');
 const User = require('../models/user');
