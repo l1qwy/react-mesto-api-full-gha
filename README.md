@@ -11,6 +11,6 @@
 
 IP 84.201.141.51
 
-Frontend https://liqwy.nomoredomainsicu.ru
+https://liqwy.nomoredomainsicu.ru
 
-Backend https://api.liqwy.nomoredomainsicu.ru
+https://api.liqwy.nomoredomainsicu.ru
