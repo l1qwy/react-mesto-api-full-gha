@@ -97,7 +97,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://api.liqwy.nomoredomainsicu.ru"
+  baseUrl: "http://api.liqwy.nomoredomainsicu.ru/"
 });
 
 export default api;
